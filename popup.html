@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>JIRA JSON Exporter</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 320px;
+      background-color: #fff;
+      color: #000;
+    }
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+    }
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      background: #f2f2f2;
+      border-right: 1px solid #ccc;
+      font-weight: bold;
+    }
+    .tab:last-child {
+      border-right: none;
+    }
+    .tab.active {
+      background: #ffffff;
+      border-bottom: 2px solid #0077ff;
+    }
+    .tab-content {
+      padding: 10px;
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    input, button, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    textarea {
+      height: 120px;
+      font-family: monospace;
+      white-space: pre;
+    }
+    button {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e0e0e0;
+    }
+    small {
+      display: block;
+      margin: 12px auto 6px;
+      text-align: center;
+      font-size: 11px;
+      color: #888;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1e1e1e;
+        color: #f5f5f5;
+      }
+      .tab {
+        background-color: #2b2b2b;
+        color: #f5f5f5;
+        border-color: #444;
+      }
+      .tab.active {
+        background-color: #1e1e1e;
+        border-bottom: 2px solid #66b0ff;
+      }
+      input, textarea, button {
+        background-color: #2b2b2b;
+        color: #fff;
+        border: 1px solid #444;
+      }
+      button:hover {
+        background-color: #3a3a3a;
+      }
+    }
+	
+	#popup-container {
+	  position: fixed;
+	  top: 100px;
+	  left: 100px;
+	  background-color: ButtonFace;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	  width: 360px;
+	  z-index: 9999;
+	}
+
+	#drag-handle {
+	  cursor: move;
+	  background: Highlight;
+	  color: HighlightText;
+	  padding: 10px;
+	  border-top-left-radius: 12px;
+	  border-top-right-radius: 12px;
+	  font-weight: bold;
+	  user-select: none;
+	}
+
+	
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <div class="tab active" data-tab="atual">Selected</div>
+    <div class="tab" data-tab="multiplas">Multiple</div>
+  </div>
+
+  <div class="tab-content active" id="tab-atual">
+    <input type="text" id="currentKey" placeholder="Detectando..." readonly />
+    <button id="exportCurrent">📎 EXPORT JSON</button>
+  </div>
+
+  <div class="tab-content" id="tab-multiplas">
+    <input type="text" id="keys" placeholder="Ex: ISSUE-1234, ISSUE-5678, ISSUE-9999" />
+    <button id="exportList">⇩ EXPORST LIST (JSON)</button>    
+  </div>
+
+  <textarea id="output" readonly placeholder="Then JSON showing here..."></textarea>
+  <button id="downloadJson">💾 DOWNLOAD JSON</button>
+  <button id="downloadCsv">💾 DOWNLOAD CSV</button>
+
+  <small>Jira JSON Exporter v1.8</small>
+  <script src="popup.js"></script>
+</body>
+</html>
