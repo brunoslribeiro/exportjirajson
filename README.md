@@ -13,8 +13,8 @@ This extension has two main modes of operation:
 
 <table>
 <tr>
-<td><img src="./29299702-b0ae-4069-8bfd-9d9f0817f440.png" alt="Single Issue Mode" width="360"/></td>
-<td><img src="./f895e35f-3c24-422e-878e-6b314815bf91.png" alt="Multiple Issues Mode" width="360"/></td>
+<td><img src="./selected-jira.png" alt="Single Issue Mode" width="360"/></td>
+<td><img src="./multiple-jira.png" alt="Multiple Issues Mode" width="360"/></td>
 </tr>
 <tr>
 <td align="center">🔹 History Tab</td>
