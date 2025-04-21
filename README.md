@@ -67,7 +67,18 @@ This extension is an **unofficial tool** built to help users export data from Ji
 
 ## 🙌 Credits
 
-Created with ❤️ by [Bruno Ribeiro](https://github.com/brunoslribeiro)  
+Created with ❤️ by [Bruno Ribeiro](https://github.com/brunoslribeiro)
+
+---
+
+## 🤖 AI Assistance
+
+This project was created with the help of [ChatGPT](https://chat.openai.com) for:
+
+- Technical architecture suggestions
+- Code generation and review
+- README and documentation drafting
+- Image generation and export logic refinement
 
 ---
 
