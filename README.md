@@ -37,7 +37,7 @@ This extension has two main modes of operation:
 
 ## 🛠️ Installation
 
-1. Clone this repository or [Download as ZIP](https://github.com/yourusername/jira-json-exporter/archive/refs/heads/main.zip)
+1. Clone this repository or [Download as ZIP](https://github.com/brunoslribeiro/exportjirajson/archive/refs/heads/main.zip)
 2. Open `chrome://extensions/` in your Chrome browser
 3. Enable **Developer mode** (top right)
 4. Click **Load unpacked**
