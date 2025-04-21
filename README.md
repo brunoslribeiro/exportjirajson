@@ -2,63 +2,75 @@
 
 A minimal and powerful Chrome extension to **export Jira issue data** as JSON or CSV — perfect for backups, reports or integrations.
 
-![Single Issue Tab](./selected-jira.png)
-*Export a single issue by detecting it directly from the Jira URL.*
+---
 
-![Multiple Issues Tab](./multiple-jira.png)
-*Paste multiple issue keys to export a list of issues at once.*
+## 🖼️ Interface Overview
+
+This extension has two main modes of operation:
+
+- **History** tab: Automatically detects and exports the currently opened Jira issue.
+- **Multiple History** tab: Allows pasting a list of issue keys (e.g. `ISSUE-123`, `ISSUE-456`) to export them all at once.
+
+<table>
+<tr>
+<td><img src="./29299702-b0ae-4069-8bfd-9d9f0817f440.png" alt="Single Issue Mode" width="360"/></td>
+<td><img src="./f895e35f-3c24-422e-878e-6b314815bf91.png" alt="Multiple Issues Mode" width="360"/></td>
+</tr>
+<tr>
+<td align="center">🔹 History Tab</td>
+<td align="center">🔸 Multiple History Tab</td>
+</tr>
+</table>
 
 ---
 
 ## 🚀 Features
 
-- 🔍 Detects the currently open Jira issue automatically
-- ⌨️ Accepts a list of issue keys (e.g. `ISSUE-1, ISSUE-2`)
-- 🧾 Exports to:
-  - **Pretty JSON**
-  - **Clean CSV** (includes type, parent, status, priority, reporter)
-- 🖼️ Dark theme with simple UX
+- 🔍 Auto-detects current Jira issue from the browser URL
+- ⌨️ Paste multiple issue keys to fetch multiple issues
+- 🧾 Export as:
+  - **Formatted JSON**
+  - **Structured CSV** with hierarchy and useful fields
+- 🎨 Dark theme UI with clean buttons and indicators
 
 ---
 
-## 🛠️ How to Install
+## 🛠️ Installation
 
-1. Clone this repository or [Download as ZIP](https://github.com/brunoslribeiro/jira-json-exporter/archive/refs/heads/main.zip)
-2. Go to `chrome://extensions/` in your browser
-3. Enable **Developer mode**
+1. Clone this repository or [Download as ZIP](https://github.com/yourusername/jira-json-exporter/archive/refs/heads/main.zip)
+2. Open `chrome://extensions/` in your Chrome browser
+3. Enable **Developer mode** (top right)
 4. Click **Load unpacked**
-5. Select the extension folder
-
----
-
-## 📦 How to Use
-
-1. Open a Jira issue in your browser
-2. Click the extension icon
-3. Choose either:
-   - **"History"** tab to export current issue
-   - **"Multiple History"** tab to paste issue keys
-4. Click to export in **JSON** or **CSV**
-5. Files will be automatically downloaded
+5. Select the folder of this extension
 
 ---
 
 ## 📁 CSV Export Format
 
+The generated CSV includes both parent issues and their subtasks, showing hierarchy clearly:
+
 | Type       | Key      | Summary                | Parent     | Status    | Priority | Reporter     |
 |------------|----------|------------------------|------------|-----------|----------|--------------|
-| History    | CRM-1234 | Update field mappings  |            | Done      | Medium   | michaelrich  |
-| Subtask    | CRM-1235 | Create flow            | CRM-1234   | In Prog.  | Medium   | lindsey      |
+| History    | CRM-1234 | Update field mappings  |            | Done      | Medium   | renatobassi  |
+| Subtask    | CRM-1235 | Create flow            | CRM-1234   | In Prog.  | Medium   | cinara       |
 
 ---
 
-## 📎 Credits
+## 📎 Disclaimer
+
+This extension is an **unofficial tool** built to help users export data from Jira that they already have access to while logged into their own instance.
+
+> It is **not affiliated with, endorsed by, or sponsored by Atlassian or Jira** in any way.  
+> All trademarks, service marks, and company names are the property of their respective owners.
+
+---
+
+## 🙌 Credits
 
 Created with ❤️ by [Bruno Ribeiro](https://github.com/brunoslribeiro)  
-Icons generated via [ChatGPT Image](https://chat.openai.com)
 
 ---
 
 ## 🧪 License
 
-MIT
+MIT License
