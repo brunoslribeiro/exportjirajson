@@ -69,15 +69,6 @@ This extension is an **unofficial tool** built to help users export data from Ji
 
 This project was created and is maintained by **Bruno Ribeiro**.
 
-Key contributions:
-
-- Developed the full logic for extracting Jira issues via the REST API
-- Built a dynamic and user-friendly Chrome extension UI
-- Designed CSV and JSON export structures with hierarchical context (Issue / Subtask)
-- Integrated drag-and-drop behaviors and dark/light theme compatibility
-- Created custom icons and branding
-- Managed testing, packaging, and GitHub deployment
-
 This project was developed with the support of ChatGPT for code review, image generation, and documentation structuring.
 
 ---
