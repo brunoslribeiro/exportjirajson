@@ -51,8 +51,8 @@ The generated CSV includes both parent issues and their subtasks, showing hierar
 
 | Type       | Key      | Summary                | Parent     | Status    | Priority | Reporter     |
 |------------|----------|------------------------|------------|-----------|----------|--------------|
-| History    | CRM-1234 | Update field mappings  |            | Done      | Medium   | renatobassi  |
-| Subtask    | CRM-1235 | Create flow            | CRM-1234   | In Prog.  | Medium   | cinara       |
+| History    | ISSUE-1234 | Update field mappings  |            | Done      | Medium   | michaeldennis  |
+| Subtask    | ISSUE-1235 | Create flow            | ISSUE-1234   | In Prog.  | Medium   | robert       |
 
 ---
 
